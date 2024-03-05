@@ -1,0 +1,327 @@
+
+* {
+    padding: 0px;
+    margin: 0;
+    font-family: "Helvetica";
+}
+
+nav {
+    background-color: #ff7171;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+p {
+    font-size: 19px;
+    line-height: 32px;
+}
+
+h1 {
+    font-size: 42px;
+    letter-spacing: 7px;
+    white-space: "nowrap"
+}
+
+.menuSize {
+    padding-left: 20px;
+}
+
+.h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    line-height: 54px;
+    margin: 10px 0px;
+}
+
+ul {
+    display: flex;
+    font-family: "bree-seif";
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 21px;
+    font-weight: 600;
+
+}
+
+.page1 {
+    background-image: linear-gradient(135deg, #fff5af, #ffaef4);
+    height: 82vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.heroImg {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    background-color: #ff7171;
+    color: #ffffff;
+    padding: 14px 68px;
+    border: none;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.heroInfo {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: center;
+    margin: auto;
+}
+
+.page2 {
+    background-image: linear-gradient(135deg, #fff5af, #ffaef4);
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5px;
+}
+
+.part1 {
+    margin: auto;
+}
+
+.imgGal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70%;
+    width: 80%;
+    gap: 0.5rem;
+    margin: auto;
+}
+
+.imgWrap1,
+.imgWrap2,
+.imgWrap3 {
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+.imgWrap1 {
+    background-image: url("images/pexels-rachel-claire-6752433.jpg");
+}
+
+.imgWrap2 {
+    grid-row-end: span 2;
+    background-image: url("images/pexels-mister-mister-3434523.jpg");
+}
+
+.imgWrap3 {
+    background-image: url("images/pexels-eva-bronzini-6141651.jpg");
+}
+
+.card {
+    width: 65%;
+    background-color: #ff7171;
+    height: fit-content;
+    padding: 2rem;
+    margin: auto 10px auto 20px;
+}
+
+.click {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menuSize {
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 1024px) {
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h1 {
+        font-size: 38px;
+        letter-spacing: 4px;
+        white-space: "nowrap"
+    }
+
+    .h2 {
+        font-size: 36px;
+        letter-spacing: 2px;
+        line-height: 48px;
+        margin: 10px 0px;
+    }
+
+    ul {
+        font-size: 18px;
+
+    }
+
+    button {
+        padding: 12px 60px;
+    }
+
+    .heroInfo {
+        gap: 36px;
+        width: 85%;
+    }
+
+    .imgGal {
+        width: 90%;
+        gap: 0.4rem;
+    }
+
+    .card {
+        width: 75%;
+        padding: 18px;
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 12px;
+
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+        white-space: "nowrap"
+    }
+
+    .h2 {
+        font-size: 32px;
+        letter-spacing: 2px;
+        line-height: 42px;
+    }
+
+    ul {
+        font-size: 15px;
+
+    }
+
+    button {
+        padding: 10px 48px;
+    }
+
+    .heroInfo {
+        gap: 32px;
+        width: 90%;
+    }
+
+    .imgGal {
+        width: 90%;
+        gap: 6px;
+    }
+
+    .card {
+        width: 85%;
+        padding: 10px;
+
+    }
+
+    .page1 {
+        height: 70vh;
+
+    }
+
+    .page2 {
+        height: 70vh;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    nav {
+        padding: 10px 6px;
+
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+
+    ul {
+        font-size: 8px;
+        font-weight: bold;
+
+    }
+
+    .menuSize {
+        padding-left: 10px;
+    }
+
+    .page1 {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heroInfo {
+        gap: 33px;
+        order: 2;
+        padding: 30px 20px;
+
+    }
+
+    .heroImg {
+        width: 100%;
+        height: 360px;
+        order: 1;
+    }
+
+    .page2 {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .imgGal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .imgWrap1 {
+        width: 48%;
+        height: 200px;
+    }
+
+
+    .imgWrap2 {
+        width: 48%;
+        height: 200px;
+        grid-column: span 2;
+
+
+    }
+
+    .imgWrap3 {
+        width: 100%;
+        height: 200px;
+    }
+
+
+    .card {
+        background-color: inherit;
+    }
+
+
+}
